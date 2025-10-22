@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DiceeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="DWv-vZ-NSG">
+                                <rect key="frame" x="-230" y="-6" width="1007" height="872"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="v4Y-qg-Jxh">
+                                <rect key="frame" x="98" y="78" width="197" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="DiceSix" translatesAutoresizingMaskIntoConstraints="NO" id="jym-MN-916">
+                                <rect key="frame" x="31" y="301" width="147" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="5VR-NE-vIr"/>
+                                    <constraint firstAttribute="width" constant="147" id="MUc-Go-KEf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="DiceSix" translatesAutoresizingMaskIntoConstraints="NO" id="plc-uw-pos">
+                                <rect key="frame" x="214" y="301" width="147" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="0to-Kz-qAm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="147" id="PDC-hW-7hS"/>
+                                    <constraint firstAttribute="width" constant="147" id="X8m-b2-Pa0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4a-YS-wcM">
+                                <rect key="frame" x="98" y="573" width="197" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LbW-84-D5W"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Roll"/>
+                                <connections>
+                                    <action selector="rollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="si6-nB-H5f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="plc-uw-pos" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="301" id="0MC-MJ-he0"/>
+                            <constraint firstItem="plc-uw-pos" firstAttribute="leading" secondItem="jym-MN-916" secondAttribute="trailing" constant="36" id="6R5-kr-daN"/>
+                            <constraint firstItem="v4Y-qg-Jxh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="Dcj-pw-ZCv"/>
+                            <constraint firstItem="v4Y-qg-Jxh" firstAttribute="leading" secondItem="C4a-YS-wcM" secondAttribute="leading" id="Ghc-d5-V4i"/>
+                            <constraint firstItem="plc-uw-pos" firstAttribute="top" secondItem="v4Y-qg-Jxh" secondAttribute="bottom" constant="95" id="P5f-Sr-v9a"/>
+                            <constraint firstItem="v4Y-qg-Jxh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PRN-ND-Ha7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="plc-uw-pos" secondAttribute="trailing" constant="32" id="R9v-lL-1yL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C4a-YS-wcM" secondAttribute="bottom" constant="171" id="VnT-Lj-087"/>
+                            <constraint firstItem="v4Y-qg-Jxh" firstAttribute="trailing" secondItem="C4a-YS-wcM" secondAttribute="trailing" id="gJv-6W-UqD"/>
+                            <constraint firstItem="plc-uw-pos" firstAttribute="top" secondItem="jym-MN-916" secondAttribute="top" id="rUW-CM-lHP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="LeftDiceeImageView" destination="jym-MN-916" id="zV4-zg-KKl"/>
+                        <outlet property="RightDiceeImageView" destination="plc-uw-pos" id="POw-oP-09b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2.2900763358778624" y="136.61971830985917"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DiceSix" width="100" height="100"/>
+        <image name="DiceeLogo" width="196" height="128"/>
+        <image name="GreenBackground" width="444.66665649414062" height="414.33334350585938"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
