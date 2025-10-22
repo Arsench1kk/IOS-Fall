@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gambling" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="slotmachine" translatesAutoresizingMaskIntoConstraints="NO" id="Rgs-tm-QSn">
+                                <rect key="frame" x="0.0" y="90" width="393" height="731"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="synbolSeven" translatesAutoresizingMaskIntoConstraints="NO" id="MdX-Tf-MGc">
+                                <rect key="frame" x="139" y="318" width="88" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="0IJ-n0-cOF"/>
+                                    <constraint firstAttribute="width" constant="171" id="mKa-Ur-q4f"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="synbolSeven" translatesAutoresizingMaskIntoConstraints="NO" id="koQ-0q-K3U">
+                                <rect key="frame" x="40" y="318" width="88" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="111" id="6hG-k1-np1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="T9c-ND-EaS"/>
+                                    <constraint firstAttribute="width" constant="171" id="jUf-Re-Bj4"/>
+                                    <constraint firstAttribute="height" constant="171" id="ql7-Tf-e4R"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0N-Lx-rqT">
+                                <rect key="frame" x="33" y="548" width="295" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="tertiaryLabelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="LET`S GO GAMBLING"/>
+                                <connections>
+                                    <action selector="spinButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oo3-f9-B7s"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE RESULT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMT-Rx-xZh">
+                                <rect key="frame" x="124" y="490" width="129" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="synbolSeven" translatesAutoresizingMaskIntoConstraints="NO" id="8C6-Aa-l2N">
+                                <rect key="frame" x="240" y="318" width="88" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="WCW-zz-cQK"/>
+                                    <constraint firstAttribute="width" constant="171" id="rF0-vz-AFI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MdX-Tf-MGc" firstAttribute="top" secondItem="8C6-Aa-l2N" secondAttribute="top" id="1Ez-6h-fPs"/>
+                            <constraint firstItem="IMT-Rx-xZh" firstAttribute="top" secondItem="MdX-Tf-MGc" secondAttribute="bottom" constant="61" id="1h4-5Y-dS2"/>
+                            <constraint firstItem="koQ-0q-K3U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="1l7-Z2-ckn"/>
+                            <constraint firstItem="MdX-Tf-MGc" firstAttribute="leading" secondItem="koQ-0q-K3U" secondAttribute="trailing" constant="11" id="3dl-P3-dz0"/>
+                            <constraint firstItem="MdX-Tf-MGc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="75C-jR-huh"/>
+                            <constraint firstItem="Rgs-tm-QSn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-28" id="8TO-kt-P1E"/>
+                            <constraint firstItem="IMT-Rx-xZh" firstAttribute="top" secondItem="koQ-0q-K3U" secondAttribute="bottom" constant="61" id="Cma-U1-Z1D"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Rgs-tm-QSn" secondAttribute="bottom" constant="-37" id="Jd5-bt-n0s"/>
+                            <constraint firstItem="MdX-Tf-MGc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="139" id="LOF-1k-tBR"/>
+                            <constraint firstItem="koQ-0q-K3U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="WxH-PS-39h"/>
+                            <constraint firstItem="8C6-Aa-l2N" firstAttribute="leading" secondItem="MdX-Tf-MGc" secondAttribute="trailing" constant="13" id="ZEM-UA-UTS"/>
+                            <constraint firstItem="MdX-Tf-MGc" firstAttribute="leading" secondItem="koQ-0q-K3U" secondAttribute="trailing" constant="11" id="b6e-pu-dDp"/>
+                            <constraint firstItem="MdX-Tf-MGc" firstAttribute="top" secondItem="koQ-0q-K3U" secondAttribute="top" id="cSY-J3-RoC"/>
+                            <constraint firstAttribute="trailing" secondItem="Rgs-tm-QSn" secondAttribute="trailing" id="de2-M2-fme"/>
+                            <constraint firstItem="Rgs-tm-QSn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iq4-cz-LPL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftReelImageView" destination="koQ-0q-K3U" id="AN1-8i-7Pw"/>
+                        <outlet property="middleReelImageView" destination="MdX-Tf-MGc" id="Yv3-jU-MRE"/>
+                        <outlet property="resultLabel" destination="IMT-Rx-xZh" id="bGk-NG-QQ5"/>
+                        <outlet property="rightReelImageView" destination="8C6-Aa-l2N" id="HJw-Ep-uYR"/>
+                        <outlet property="spinButton" destination="T0N-Lx-rqT" id="wPT-Kk-8Dp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.946564885496173" y="136.61971830985917"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="slotmachine" width="169.33332824707031" height="301"/>
+        <image name="synbolSeven" width="341.33334350585938" height="341.33334350585938"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
