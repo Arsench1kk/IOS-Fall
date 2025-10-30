@@ -1,0 +1,19 @@
+//
+//  ViewController.swift
+//  Playlist
+//
+//  Created by Арсен Абдухалық on 30.10.2025.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+
+}
+
