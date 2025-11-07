@@ -1,24 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Playlist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="CgB-kw-9I8">
+                                <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="DES-jQ-Ume">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="419"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Robbery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jub-qo-3Gd">
+                                        <rect key="frame" x="0.0" y="419" width="393" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="fVp-57-gBR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juice WRLD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZL-xt-GNT">
+                                        <rect key="frame" x="0.0" y="474" width="393" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Px1-J1-sKc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rkj-vd-dG0">
+                                        <rect key="frame" x="0.0" y="519" width="393" height="147"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJo-rR-w0D">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="147"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="131" id="Y94-cE-SjG"/>
+                                                    <constraint firstAttribute="height" constant="147" id="kO7-4K-seg"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Prev"/>
+                                                <connections>
+                                                    <action selector="previousTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ptl-t8-Zl7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtL-x7-eEX">
+                                                <rect key="frame" x="131" y="0.0" width="131" height="147"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="131" id="4yJ-mt-q6o"/>
+                                                    <constraint firstAttribute="height" constant="147" id="rjz-kR-E9A"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Play/Pause"/>
+                                                <connections>
+                                                    <action selector="pauseandPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dPw-rh-qel"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFQ-LZ-0CO">
+                                                <rect key="frame" x="262" y="0.0" width="131" height="147"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="147" id="F8C-cx-QVo"/>
+                                                    <constraint firstAttribute="width" constant="131" id="y1G-9M-X9i"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                                <connections>
+                                                    <action selector="nextTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Th-jg-zvL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CgB-kw-9I8" secondAttribute="trailing" id="EwG-7E-pnK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CgB-kw-9I8" secondAttribute="bottom" id="gbe-as-Q5e"/>
+                            <constraint firstItem="CgB-kw-9I8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tRW-yk-Tfz"/>
+                            <constraint firstItem="CgB-kw-9I8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xOh-LP-7Tr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cover" destination="DES-jQ-Ume" id="3Mr-P8-erx"/>
+                        <outlet property="trackName" destination="Jub-qo-3Gd" id="vGa-go-JDB"/>
+                        <outlet property="trackSinger" destination="9ZL-xt-GNT" id="0y6-Xn-0ke"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-28.244274809160306" y="110.56338028169014"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cover1.jpeg" width="76.800003051757812" height="76.800003051757812"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
